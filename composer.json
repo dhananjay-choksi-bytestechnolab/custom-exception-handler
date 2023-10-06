@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^8.2.10",
         "illuminate/support": "^8.0"
     },
     "autoload": {
