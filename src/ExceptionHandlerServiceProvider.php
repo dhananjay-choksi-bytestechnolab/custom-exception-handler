@@ -20,10 +20,57 @@
 //     }
 // }
 
+// namespace BytesTechnoLab\ExceptionHandler;
+
+// use Illuminate\Support\ServiceProvider;
+// use BytesTechnoLab\CustomExceptionHandler; // Add this import statement
+
+// class ExceptionHandlerServiceProvider extends ServiceProvider
+// {
+//     public function register()
+//     {
+//         // Register your package's services or bindings here, if any.
+//     }
+
+//     public function boot()
+//     {
+//         // This is where you can register your custom exception handling.
+//         // For example, you can override Laravel's default exception handler.
+//         $this->app->singleton(\Illuminate\Contracts\Debug\ExceptionHandler::class, function ($app) {
+//             return new CustomExceptionHandler($app); // Use your custom exception handler here
+//         });
+//     }
+// }
+
+
+// namespace BytesTechnoLab\ExceptionHandler;
+
+// use Illuminate\Support\ServiceProvider;
+// use BytesTechnoLab\ExceptionHandler\ExceptionHandler\CustomExceptionHandler; // Updated import
+
+// class ExceptionHandlerServiceProvider extends ServiceProvider
+// {
+//     public function register()
+//     {
+//         // Register your package's services or bindings here, if any.
+//     }
+
+//     public function boot()
+//     {
+//         // This is where you can register your custom exception handling.
+//         // For example, you can override Laravel's default exception handler.
+//         $this->app->singleton(\Illuminate\Contracts\Debug\ExceptionHandler::class, function ($app) {
+//             return new CustomExceptionHandler($app); // Use your custom exception handler here
+//         });
+//     }
+// }
+
+
+
 namespace BytesTechnoLab\ExceptionHandler;
 
 use Illuminate\Support\ServiceProvider;
-use BytesTechnoLab\CustomExceptionHandler; // Add this import statement
+use BytesTechnoLab\CustomExceptionHandler\ExceptionHandler\CustomExceptionHandler; // Updated import
 
 class ExceptionHandlerServiceProvider extends ServiceProvider
 {
