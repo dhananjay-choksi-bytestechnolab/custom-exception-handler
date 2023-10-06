@@ -3,6 +3,7 @@
 namespace BytesTechnoLab\ExceptionHandler;
 
 use Illuminate\Support\ServiceProvider;
+use BytesTechnoLab\CustomExceptionHandler;
 
 class ExceptionHandlerServiceProvider extends ServiceProvider
 {
