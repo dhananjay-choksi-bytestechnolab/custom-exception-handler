@@ -18,5 +18,12 @@
         "psr-4": {
             "BytesTechnoLab\\ExceptionHandler\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BytesTechnoLab\\ExceptionHandler\\ExceptionHandlerServiceProvider"
+            ]
+        }
     }
 }
